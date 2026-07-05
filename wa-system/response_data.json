@@ -1,0 +1,19 @@
+{
+  "default": "Balasan otomatis: Terima kasih, pesan Anda sudah diterima.",
+  "opted_out": "Permintaan berhenti telah diproses. Anda tidak akan menerima balasan otomatis lagi.",
+  "daily_limit": "Balasan otomatis sedang dibatasi. Silakan lanjutkan percakapan pada hari berikutnya.",
+  "rules": [
+    {
+      "keywords": ["halo", "hai", "hello"],
+      "response": "Balasan otomatis: Halo, terima kasih sudah menghubungi kami."
+    },
+    {
+      "keywords": ["bantuan", "help"],
+      "response": "Balasan otomatis: Jelaskan kebutuhan Anda secara singkat agar dapat ditindaklanjuti."
+    },
+    {
+      "keywords": ["jam", "waktu operasional"],
+      "response": "Balasan otomatis: Pesan Anda sudah dicatat dan akan ditinjau pada waktu operasional."
+    }
+  ]
+}
