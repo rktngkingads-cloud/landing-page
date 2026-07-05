@@ -1,16 +1,16 @@
-name: WhatsApp Python checks
+name: WA system checks
 
 on:
   pull_request:
     paths:
-      - "whatsapp-python/**"
+      - "wa-system/**"
       - ".github/workflows/whatsapp-python-check.yml"
   push:
     branches:
       - main
       - "codex/**"
     paths:
-      - "whatsapp-python/**"
+      - "wa-system/**"
       - ".github/workflows/whatsapp-python-check.yml"
 
 permissions:
@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: whatsapp-python
+        working-directory: wa-system
 
     steps:
       - uses: actions/checkout@v4
@@ -29,7 +29,7 @@ jobs:
         with:
           python-version: "3.12"
           cache: pip
-          cache-dependency-path: whatsapp-python/requirements.txt
+          cache-dependency-path: wa-system/requirements.txt
       - name: Install dependencies
         run: python -m pip install --upgrade pip && pip install -r requirements.txt
       - name: Compile Python
